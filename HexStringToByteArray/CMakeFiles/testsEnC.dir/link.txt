@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/testsEnC.dir/main/main.c.o  -o testsEnC -rdynamic -lpthread src/dessinterminal/libdessinterminal.so -Wl,-rpath,/home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/src/dessinterminal 
