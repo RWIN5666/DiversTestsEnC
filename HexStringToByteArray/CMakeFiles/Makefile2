@@ -53,38 +53,39 @@ CMAKE_SOURCE_DIR = /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByte
 CMAKE_BINARY_DIR = /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray
 
 #=============================================================================
-# Target rules for target CMakeFiles/testsEnC.dir
+# Target rules for target CMakeFiles/testHexLib.dir
 
 # All Build rule for target.
-CMakeFiles/testsEnC.dir/all: src/dessinterminal/CMakeFiles/dessinterminal.dir/all
-	$(MAKE) -f CMakeFiles/testsEnC.dir/build.make CMakeFiles/testsEnC.dir/depend
-	$(MAKE) -f CMakeFiles/testsEnC.dir/build.make CMakeFiles/testsEnC.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles  2
-	@echo "Built target testsEnC"
-.PHONY : CMakeFiles/testsEnC.dir/all
+CMakeFiles/testHexLib.dir/all: src/dessinterminal/CMakeFiles/dessinterminal.dir/all
+CMakeFiles/testHexLib.dir/all: src/hexLib/CMakeFiles/hexLib.dir/all
+	$(MAKE) -f CMakeFiles/testHexLib.dir/build.make CMakeFiles/testHexLib.dir/depend
+	$(MAKE) -f CMakeFiles/testHexLib.dir/build.make CMakeFiles/testHexLib.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles  3
+	@echo "Built target testHexLib"
+.PHONY : CMakeFiles/testHexLib.dir/all
 
 # Include target in all.
-all: CMakeFiles/testsEnC.dir/all
+all: CMakeFiles/testHexLib.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/testsEnC.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testsEnC.dir/all
+CMakeFiles/testHexLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testHexLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles 0
-.PHONY : CMakeFiles/testsEnC.dir/rule
+.PHONY : CMakeFiles/testHexLib.dir/rule
 
 # Convenience name for target.
-testsEnC: CMakeFiles/testsEnC.dir/rule
-.PHONY : testsEnC
+testHexLib: CMakeFiles/testHexLib.dir/rule
+.PHONY : testHexLib
 
 # clean rule for target.
-CMakeFiles/testsEnC.dir/clean:
-	$(MAKE) -f CMakeFiles/testsEnC.dir/build.make CMakeFiles/testsEnC.dir/clean
-.PHONY : CMakeFiles/testsEnC.dir/clean
+CMakeFiles/testHexLib.dir/clean:
+	$(MAKE) -f CMakeFiles/testHexLib.dir/build.make CMakeFiles/testHexLib.dir/clean
+.PHONY : CMakeFiles/testHexLib.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/testsEnC.dir/clean
+clean: CMakeFiles/testHexLib.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -135,6 +136,56 @@ src/dessinterminal/CMakeFiles/dessinterminal.dir/clean:
 
 # clean rule for target.
 clean: src/dessinterminal/CMakeFiles/dessinterminal.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/hexLib
+
+# Convenience name for "all" pass in the directory.
+src/hexLib/all: src/hexLib/CMakeFiles/hexLib.dir/all
+.PHONY : src/hexLib/all
+
+# Convenience name for "clean" pass in the directory.
+src/hexLib/clean: src/hexLib/CMakeFiles/hexLib.dir/clean
+.PHONY : src/hexLib/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/hexLib/preinstall:
+.PHONY : src/hexLib/preinstall
+
+#=============================================================================
+# Target rules for target src/hexLib/CMakeFiles/hexLib.dir
+
+# All Build rule for target.
+src/hexLib/CMakeFiles/hexLib.dir/all:
+	$(MAKE) -f src/hexLib/CMakeFiles/hexLib.dir/build.make src/hexLib/CMakeFiles/hexLib.dir/depend
+	$(MAKE) -f src/hexLib/CMakeFiles/hexLib.dir/build.make src/hexLib/CMakeFiles/hexLib.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles  2
+	@echo "Built target hexLib"
+.PHONY : src/hexLib/CMakeFiles/hexLib.dir/all
+
+# Include target in all.
+all: src/hexLib/CMakeFiles/hexLib.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/hexLib/CMakeFiles/hexLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/hexLib/CMakeFiles/hexLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles 0
+.PHONY : src/hexLib/CMakeFiles/hexLib.dir/rule
+
+# Convenience name for target.
+hexLib: src/hexLib/CMakeFiles/hexLib.dir/rule
+.PHONY : hexLib
+
+# clean rule for target.
+src/hexLib/CMakeFiles/hexLib.dir/clean:
+	$(MAKE) -f src/hexLib/CMakeFiles/hexLib.dir/build.make src/hexLib/CMakeFiles/hexLib.dir/clean
+.PHONY : src/hexLib/CMakeFiles/hexLib.dir/clean
+
+# clean rule for target.
+clean: src/hexLib/CMakeFiles/hexLib.dir/clean
 .PHONY : clean
 
 #=============================================================================

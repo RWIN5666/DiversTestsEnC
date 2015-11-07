@@ -12,13 +12,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.2.2/CMakeSystem.cmake"
   "CMakeLists.txt"
   "src/dessinterminal/CMakeLists.txt"
+  "src/hexLib/CMakeLists.txt"
   "/usr/share/cmake-3.2/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/share/cmake-3.2/Modules/CMakeUnixFindMake.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/GNU.cmake"
@@ -39,10 +39,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/dessinterminal/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/hexLib/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/testsEnC.dir/DependInfo.cmake"
+  "CMakeFiles/testHexLib.dir/DependInfo.cmake"
   "src/dessinterminal/CMakeFiles/dessinterminal.dir/DependInfo.cmake"
+  "src/hexLib/CMakeFiles/hexLib.dir/DependInfo.cmake"
   )

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-set(PRJ testsEnC)
+set(PRJ testHexLib)
 set(MAIN main/main.c)
 
 set(CMAKE_BUILD_TYPE Debug)
@@ -13,8 +13,8 @@ include_directories(
 )
 
 add_subdirectory(src/dessinterminal)
-
+add_subdirectory(src/hexLib)
 
 add_executable(${PRJ} ${MAIN})
-target_link_libraries(${PRJ} pthread dessinterminal)
+target_link_libraries(${PRJ} pthread dessinterminal hexLib)
 

@@ -29,16 +29,11 @@ WEB PAR WEBSOCKET
 
 // prototypes Threads & fonctions persos
 
-int testFunction(uint8_t * test);
-
-
-
 
 // TABLE DE MODULES FPGA
 // On se dit qu'on en aura que 10 au maximum pour le moment...
 int tailleTableau;
 //struct moduleFPGA tableauFPGA[10];
-
 
 
 typedef unsigned char u8;
@@ -51,12 +46,12 @@ void s2u(char *s, u8 *o)
 
 
 
-int charToByteArray(unsigned int bytearray[],char *hexstring){
+int charToByteArray(unsigned int * bytearray,char *hexstring){
     int i;
 	
     uint8_t str_len = strlen(hexstring);
 
-	memset(bytearray, 0x00, sizeof(bytearray));
+	memset(bytearray, 0x00, (int)sizeof(bytearray));
 
     for (i = 0; i < ((str_len / 2)-1); i++) {
         sscanf(hexstring + 2*i, "%02x", &bytearray[i]);
@@ -104,7 +99,6 @@ int main(void){
 	
 	//int resultat = computeData(tableauTest,2);
 	//printf("resultat : %d", resultat);
-	printf("test");
 	//POUR AFFICHER UN TRUC SYMPA AU LANCEMENT DU PROGRAMME
 	char *filename = "main/image2.txt";
 	FILE *fptr = NULL;
@@ -116,14 +110,11 @@ int main(void){
 	print_image(fptr);
 	fclose(fptr);
 	fprintf(stderr,"\n");
-	printf("Lancement du programme 42main\n");
-	
 
-	
 
-  	uint8_t byte1 = 0x00;
+  	uint8_t byte1 = 0x20;
     uint8_t byte2 = 0x10;
-    uint8_t byte3 = 0x00;
+    uint8_t byte3 = 0x30;
     
     uint8_t testTrame[(3*2)+1];
     
@@ -136,7 +127,7 @@ int main(void){
     unsigned char buffer[taille];
 
 
-   	convertZeroPadedHexIntoByte(&testTrame,&buffer);
+   	convertZeroPadedHexIntoByte(testTrame,buffer);
 
    	for(int i = 0; i < 3 ; i++){
 
@@ -144,53 +135,6 @@ int main(void){
    		fprintf(stderr,"%02x",buffer[i]);
 
    	}
-
-
- // 	char * asta = (char*)calloc(2 * sizeof(buffer) + 1, sizeof(char)); // calloc automatically zeros asta
-	// int k;
-	// for (k = 0; k < sizeof(buffer) ; k++)
-	// {
-	//     sprintf(&asta[2 * k],"%02X", (unsigned int)buffer[k]); // Not sure if the cast is needed
-	// }
-	// printf("\n");
-	// printf("%s",asta);
- //    printf("\n");
- //        for(int i = 0; i< sizeof(buffer) ; i++){
-        
-        
- //        fprintf(stderr,"%02x", (uint8_t)asta[i*2] - (16));
-        
-        
- //    }
- 
- 
- 
-
-
-    
-    
     printf("\n");
-
-
-	
-
 }
-
-int testFunction(uint8_t * test){
-
-	uint8_t * testTruc  = malloc(sizeof(uint8_t)*3);
-
-	for(int i =0;i<2;i++){
-		testTruc[i] = test[i];
-	}
-
-
-	for(int j =0;j<2;j++){
-		fprintf(stderr,"%02x ",testTruc[j]);
-	}
-	printf("\n");	
-	return 0;
-
-}
-
 

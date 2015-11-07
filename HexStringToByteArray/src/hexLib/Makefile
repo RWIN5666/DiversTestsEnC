@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(CMAKE_COMMAND) -E cmake_progress_start /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/src/hexLib/CMakeFiles/progress.marks
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f CMakeFiles/Makefile2 src/hexLib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f CMakeFiles/Makefile2 src/hexLib/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,81 +88,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f CMakeFiles/Makefile2 src/hexLib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f CMakeFiles/Makefile2 src/hexLib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named testHexLib
+# Convenience name for target.
+src/hexLib/CMakeFiles/hexLib.dir/rule:
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f CMakeFiles/Makefile2 src/hexLib/CMakeFiles/hexLib.dir/rule
+.PHONY : src/hexLib/CMakeFiles/hexLib.dir/rule
 
-# Build rule for target.
-testHexLib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testHexLib
-.PHONY : testHexLib
-
-# fast build rule for target.
-testHexLib/fast:
-	$(MAKE) -f CMakeFiles/testHexLib.dir/build.make CMakeFiles/testHexLib.dir/build
-.PHONY : testHexLib/fast
-
-#=============================================================================
-# Target rules for targets named dessinterminal
-
-# Build rule for target.
-dessinterminal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dessinterminal
-.PHONY : dessinterminal
-
-# fast build rule for target.
-dessinterminal/fast:
-	$(MAKE) -f src/dessinterminal/CMakeFiles/dessinterminal.dir/build.make src/dessinterminal/CMakeFiles/dessinterminal.dir/build
-.PHONY : dessinterminal/fast
-
-#=============================================================================
-# Target rules for targets named hexLib
-
-# Build rule for target.
-hexLib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hexLib
+# Convenience name for target.
+hexLib: src/hexLib/CMakeFiles/hexLib.dir/rule
 .PHONY : hexLib
 
 # fast build rule for target.
 hexLib/fast:
-	$(MAKE) -f src/hexLib/CMakeFiles/hexLib.dir/build.make src/hexLib/CMakeFiles/hexLib.dir/build
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f src/hexLib/CMakeFiles/hexLib.dir/build.make src/hexLib/CMakeFiles/hexLib.dir/build
 .PHONY : hexLib/fast
 
-main/main.o: main/main.c.o
-.PHONY : main/main.o
+hexLib.o: hexLib.c.o
+.PHONY : hexLib.o
 
 # target to build an object file
-main/main.c.o:
-	$(MAKE) -f CMakeFiles/testHexLib.dir/build.make CMakeFiles/testHexLib.dir/main/main.c.o
-.PHONY : main/main.c.o
+hexLib.c.o:
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f src/hexLib/CMakeFiles/hexLib.dir/build.make src/hexLib/CMakeFiles/hexLib.dir/hexLib.c.o
+.PHONY : hexLib.c.o
 
-main/main.i: main/main.c.i
-.PHONY : main/main.i
+hexLib.i: hexLib.c.i
+.PHONY : hexLib.i
 
 # target to preprocess a source file
-main/main.c.i:
-	$(MAKE) -f CMakeFiles/testHexLib.dir/build.make CMakeFiles/testHexLib.dir/main/main.c.i
-.PHONY : main/main.c.i
+hexLib.c.i:
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f src/hexLib/CMakeFiles/hexLib.dir/build.make src/hexLib/CMakeFiles/hexLib.dir/hexLib.c.i
+.PHONY : hexLib.c.i
 
-main/main.s: main/main.c.s
-.PHONY : main/main.s
+hexLib.s: hexLib.c.s
+.PHONY : hexLib.s
 
 # target to generate assembly for a file
-main/main.c.s:
-	$(MAKE) -f CMakeFiles/testHexLib.dir/build.make CMakeFiles/testHexLib.dir/main/main.c.s
-.PHONY : main/main.c.s
+hexLib.c.s:
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(MAKE) -f src/hexLib/CMakeFiles/hexLib.dir/build.make src/hexLib/CMakeFiles/hexLib.dir/hexLib.c.s
+.PHONY : hexLib.c.s
 
 # Help Target
 help:
@@ -172,12 +147,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... testHexLib"
-	@echo "... dessinterminal"
 	@echo "... hexLib"
-	@echo "... main/main.o"
-	@echo "... main/main.i"
-	@echo "... main/main.s"
+	@echo "... hexLib.o"
+	@echo "... hexLib.i"
+	@echo "... hexLib.s"
 .PHONY : help
 
 
@@ -189,6 +162,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
