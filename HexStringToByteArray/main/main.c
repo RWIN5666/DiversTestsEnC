@@ -124,7 +124,7 @@ int main(void){
     sprintf(&testTrame[4],"%02x",byte3);
     printf("test : %s\n", testTrame);
 
-    unsigned char buffer[taille];
+    uint8_t buffer[taille];
 
 
    	convertZeroPadedHexIntoByte(testTrame,buffer);

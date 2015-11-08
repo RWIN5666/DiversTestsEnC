@@ -31,7 +31,7 @@ int charToByteArray(unsigned int * bytearray,char *hexstring){
 
 
 
-int convertZeroPadedHexIntoByte(char *dataset,unsigned char *bytearray){
+int convertZeroPadedHexIntoByte(char *dataset,uint8_t *bytearray){
 	int i = strlen(dataset),j=0,counter=0;
 	char c[2];
 	unsigned int bytes[2];

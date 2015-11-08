@@ -8,7 +8,7 @@
 
 ./include/hexLib/hexLib.h
 
-/home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/src/hexLib/hexLib.c
+/home/erwin/Documents/PRE/Tests/DiversTestsEnC/HexStringToByteArray/src/hexLib/hexLib.c
 stdio.h
 -
 stdlib.h
@@ -20,7 +20,7 @@ unistd.h
 string.h
 -
 hexLib/hexLib.h
-/home/erwin/Documents/S9/Tests/DiversTestsEnC/HexStringToByteArray/src/hexLib/hexLib/hexLib.h
+/home/erwin/Documents/PRE/Tests/DiversTestsEnC/HexStringToByteArray/src/hexLib/hexLib/hexLib.h
 stdint.h
 -
 
